@@ -23,7 +23,7 @@ const Canada = () => {
           <div className="h4">
             <Card
               className="max-w-sm my-6 mx-3"
-              imgSrc="pexels-karolina-grabowska-4491492.jpg"
+              imgSrc="pexels-duygugungor-18806004.jpg"
               horizontal
             >
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -39,7 +39,7 @@ const Canada = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              imgSrc="pexels-karolina-grabowska-4491492.jpg"
+              imgSrc="pexels-rdne-6148993.jpg"
               horizontal
             >
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -55,7 +55,7 @@ const Canada = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              imgSrc="pexels-karolina-grabowska-4491492.jpg"
+              imgSrc="pexels-olly-1024403.jpg"
               horizontal
             >
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -71,7 +71,7 @@ const Canada = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              imgSrc="pexels-karolina-grabowska-4491492.jpg"
+              imgSrc="pexels-expressivestanley-3186386.jpg"
               horizontal
             >
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

@@ -24,17 +24,15 @@ const Home = () => {
           <div className="container-sec">
             <div className="aspire">ASPIRE TO FLY</div>
             <section className="registration-container">
-            
-              <Emailjs/>
+              <Emailjs />
             </section>
           </div>
         </div>
       </section>
       <section>
         <div className="uer-form">
-          
           <section className="registration-container1">
-            <Emailjs/>
+            <Emailjs />
           </section>
         </div>
       </section>

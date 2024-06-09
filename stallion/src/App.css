@@ -955,6 +955,9 @@ body {
   .aspire:hover {
     font-size: 12rem;
   }
+  .appoint1{
+    display: none;
+  }
   .registration-container {
     display: none;
   }
@@ -969,7 +972,7 @@ body {
     font-size: 2rem;
     font-weight: bolder;
     color: #003652;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     text-decoration-line: underline;
     text-wrap: wrap;
    }

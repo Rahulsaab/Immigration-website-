@@ -1,18 +1,21 @@
 import "./App.css";
+import React from "react";
 import { ToastContainer } from 'react-toastify';
-import Home from "./components/home";
-import Service from "./components/service";
-import Skills from "./components/skills";
-import About from "./components/about";
-import Contact from "./components/contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/navbar";
-import Canada from "./components/canada";
-import Othercount from "./components/othercount";
-import Tnc from "./components/tnc";
-import Privacy from "./components/privacy";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import Header from "./components/navbar";
+import { Spinner } from "flowbite-react";
+
+const Home = React.lazy(() => import("./components/home"));
+const Service = React.lazy(() => import("./components/service"));
+const Skills = React.lazy(() => import("./components/skills"));
+const About = React.lazy(() => import("./components/about"));
+const Contact = React.lazy(() => import("./components/contact"));
+const Canada = React.lazy(() => import("./components/canada"));
+const Othercount = React.lazy(() => import("./components/othercount"));
+const Tnc = React.lazy(() => import("./components/tnc"));
+const Privacy = React.lazy(() => import("./components/privacy"));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -27,23 +30,25 @@ function ScrollToTop() {
 function App() {
   return (
     <BrowserRouter>
-    <ToastContainer />
+      <ToastContainer />
       <ScrollToTop />
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/canada" element={<Canada />} />
-        <Route path="/othercount" element={<Othercount />} />
-        <Route path="/tnc" element={<Tnc />} />
-        <Route path="/privacy" element={<Privacy />} />
-      </Routes>
-      
+      <React.Suspense fallback={<div className="text-center">
+        <Spinner aria-label="Center-aligned spinner example" />
+      </div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/canada" element={<Canada />} />
+          <Route path="/othercount" element={<Othercount />} />
+          <Route path="/tnc" element={<Tnc />} />
+          <Route path="/privacy" element={<Privacy />} />
+        </Routes>
+      </React.Suspense>
     </BrowserRouter>
-    
   );
 }
 
