@@ -236,26 +236,6 @@ body {
     transition: 0.4s;
     margin-bottom: 4rem;
   }
-  .flag {
-    width: 10rem;
-    margin-left: 2rem;
-  }
-  .flag2 {
-    width: 10rem;
-    margin-left: 2rem;
-  }
-  .flag3 {
-    width: 10rem;
-    margin-left: 2rem;
-  }
-  .flag4 {
-    width: 10rem;
-    margin-left: 2rem;
-  }
-  .flag5 {
-    width: 10rem;
-    margin-left: 2rem;
-  }
   .country {
     color: black;
     font-size: 1.5rem;
@@ -266,9 +246,9 @@ body {
     color: #83847e;
     margin-top: 1rem;
     font-size: 0.9rem;
-    width: 15rem;
+    flex-wrap: wrap;
+    text-wrap: wrap;
     text-align: center;
-    /* padding-left: 1rem; */
   }
   .diff-flags1 {
     display: flex;
