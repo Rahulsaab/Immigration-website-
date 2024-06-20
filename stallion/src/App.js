@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import { ToastContainer } from 'react-toastify';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from "./components/navbar";
@@ -29,7 +29,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ToastContainer />
       <ScrollToTop />
       <Header />
@@ -48,7 +48,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </React.Suspense>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
