@@ -1,0 +1,15 @@
+Our immigration website, built with React.js, offers a seamless and intuitive user experience. Designed to assist users in navigating the complexities of immigration processes, it features a clean and responsive interface. Key functionalities include real-time updates on visa statuses, comprehensive guides on various immigration pathways, and a secure portal for submitting and tracking applications. The site’s modular design ensures fast load times and easy maintenance. With user-friendly navigation and accessibility features, it caters to a global audience, providing valuable resources and support for individuals and families pursuing their immigration goals.
+
+![Screenshot 2024-06-24 112534](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/7526b840-d241-451e-b612-39c65eef7f56)
+![Screenshot 2024-06-24 112549](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/77848cbd-eb0e-49a8-bc9b-709cbfce4e70)
+![Screenshot 2024-06-24 112630](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/3ea3aa4e-73d5-46a6-8d17-2efa65d4b1b1)
+![Screenshot 2024-06-24 112707](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/016ae8f7-7370-4b9f-98a6-9a4c5d2b8ca0)
+![Screenshot 2024-06-24 112723](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/2ef636f9-57af-4246-9e62-f7eb46e15341)
+![Screenshot 2024-06-24 112737](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/eaca4479-659c-4916-9779-7817848d9caa)
+![Screenshot 2024-06-24 112836](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/cb2e877a-db9d-49d2-8e1e-1ab4659a7c72)
+![Screenshot 2024-06-24 112926](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/725684ce-b8b0-4d87-a917-cca03a1f7155)
+![Screenshot 2024-06-24 113043](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/1cefe405-3b23-4c6b-91fd-0bea852394d2)
+![Screenshot 2024-06-24 113054](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/9f69667e-4ff6-4ee3-8909-e1b266d10c90)
+![Screenshot 2024-06-24 113114](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/57ef6b26-4cd9-4a71-b21a-56acb5de2cc8)
+![Screenshot 2024-06-24 113227](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/c5ee445e-9b3a-4865-8d43-7d8dd7b836f5)
+![Screenshot 2024-06-24 113312](https://github.com/Rahulsaab/Immigration-website-/assets/29977353/c756457d-3de7-46e0-818a-6bd0e5cab98d)
