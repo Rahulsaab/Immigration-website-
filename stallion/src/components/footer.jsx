@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
@@ -8,13 +8,17 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaCopyright } from "react-icons/fa";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <footer>
-        <div className="container5">
-          {/* <Mobilefooter/> */}
+        <div className="container5" data-aos="fade-right">
           <div className="footer">
             <div className="f1">
               <div className="heading">
@@ -201,48 +205,6 @@ const Footer = () => {
                     Facebook
                   </a>
                 </div>
-                {/* <div className="wa">
-                  <a className="wa" href="https://wa.me/+917970000976" target="_blank" rel="noopener noreferrer">
-                    <div className="social-logo" style={{ color: "#83847e" }}>
-                      <IoLogoWhatsapp />
-                    </div>
-                    WhatsApp
-                  </a>
-                </div>
-                <div className="wa">
-                  <a
-                    className="wa"
-                    href="https://www.instagram.com/_stallionimmigration_?igsh=MXBpNGhhbmtmNnM0YQ%3D%3D"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="social-logo" style={{ color: "#83847e" }}>
-                      <AiFillInstagram />
-                    </div>
-                    Instagram
-                  </a>
-                </div>
-                <div className="wa">
-                  <a className="wa" href="https://www.linkedin.com/in/rohit-singh-b30627291/" target="_blank" rel="noopener noreferrer">
-                    <div className="social-logo" style={{ color: "#83847e" }}>
-                      <FaLinkedin />
-                    </div>
-                    LinkedIn
-                  </a>
-                </div>
-                <div className="wa">
-                  <a
-                    className="wa"
-                    href="https://www.facebook.com/profile.php?id=61550918926354&mibextid=ZbWKwL"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="social-logo" style={{ color: "#83847e" }}>
-                      <FaSquareFacebook />
-                    </div>
-                    Facebook
-                  </a>
-                </div> */}
               </div>
             </div>
             <div className="left-footer3">
@@ -265,7 +227,7 @@ const Footer = () => {
         </div>
       </footer>
       <footer>
-        <div className="container6">
+        <div className="container6" >
           <div className="footer2">
             <div className="left-footer1" style={{ display: "flex" }}>
               <div
@@ -311,7 +273,7 @@ const Footer = () => {
         </div>
       </footer>
       <footer>
-        <div className="container51">
+        <div className="container51" data-aos="fade-right">
           <div className="footer">
             <div className="f1">
               <div className="heading">

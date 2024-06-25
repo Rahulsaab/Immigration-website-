@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useEffect }  from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 import Footer from "./footer";
 import { Card } from "flowbite-react";
 const Canada = () => {
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
   return (
     <>
       <section>
         <div className="container15">
-          <div className="h0">Temporary Visa</div>
-          <div className="h1">Canada</div>
-          <div className="h2">
+          <div className="h0" data-aos="fade-right">Temporary Visa</div>
+          <div className="h1" data-aos="fade-right">Canada</div>
+          <div className="h2" data-aos="fade-right">
             "Temporary Visa Magic: Your Gateway to Canadian Splendors with
             Stallion Immigration"
           </div>
-          <div className="h3">
+          <div className="h3" data-aos="fade-right">
             Welcome to Stallion Immigration's Temporary Visa services your
             ticket to a temporary sojourn in the breathtaking landscapes of
             Canada. Whether you're dreaming of a leisurely visit, reuniting with
@@ -23,6 +28,7 @@ const Canada = () => {
           <div className="h4">
             <Card
               className="max-w-sm my-6 mx-3"
+              data-aos="flip-left"
               imgSrc="pexels-duygugungor-18806004.jpg"
               horizontal
             >
@@ -39,6 +45,7 @@ const Canada = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
+              data-aos="flip-left"
               imgSrc="pexels-rdne-6148993.jpg"
               horizontal
             >
@@ -55,6 +62,7 @@ const Canada = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
+              data-aos="flip-left"
               imgSrc="pexels-olly-1024403.jpg"
               horizontal
             >
@@ -71,6 +79,7 @@ const Canada = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
+              data-aos="flip-left"
               imgSrc="pexels-expressivestanley-3186386.jpg"
               horizontal
             >

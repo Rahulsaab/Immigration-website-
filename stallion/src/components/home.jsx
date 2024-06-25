@@ -4,8 +4,13 @@ import { Button } from "flowbite-react";
 import { Link } from "react-router-dom";
 import { Imgscroll } from "./crousel";
 import Emailjs from "./emailjs";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Home = () => {
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://cdn.commoninja.com/sdk/latest/commonninja.js";
@@ -21,9 +26,9 @@ const Home = () => {
     <>
       <section>
         <div className="main-container">
-          <div className="container-sec">
-            <div className="aspire">ASPIRE TO FLY</div>
-            <section className="registration-container">
+          <div className="container-sec" >
+            <div className="aspire"  >ASPIRE TO FLY</div>
+            <section className="registration-container"  data-aos="fade-right">
               <Emailjs />
             </section>
           </div>
@@ -31,33 +36,33 @@ const Home = () => {
       </section>
       <section>
         <div className="uer-form">
-          <section className="registration-container1">
+          <section className="registration-container1"  data-aos="fade-right">
             <Emailjs />
           </section>
         </div>
       </section>
       <section>
         <div className="container2">
-          <div className="c1">Why Choose Stallion Immigration?</div>
+          <div className="c1"  data-aos="fade-right">Why Choose Stallion Immigration?</div>
           <div className="content-img">
             <div className="content">
-              <div className="c2">
+              <div className="c2" data-aos="fade-right">
                 We are not just consultants - We are Dream Architects.
               </div>
-              <div className="c3">
+              <div className="c3" data-aos="fade-right">
                 At Stallion Immigration, we don't just facilitate immigration;
                 we pave the way for a brighter, more promising future. Contact
                 us today, and let Stallion Immigration be the wind beneath your
                 wings as you soar to new heights.
               </div>
-              <div className="c5">
+              <div className="c5" data-aos="fade-right">
                 Your dreams are our priority, and Stallion Immigration is here
                 to make them a reality. Contact us today and let the journey
                 begin!
               </div>
               <div className="click">
                 <a href="contact.html">
-                  <Button className="b1">
+                  <Button className="b1" data-aos="fade-right">
                     <Link to="/contact">Contact Us</Link>
                   </Button>
                 </a>
@@ -73,12 +78,12 @@ const Home = () => {
       </section>
       <section>
         <div className="container2">
-          <div className="visa">
+          <div className="visa"  data-aos="fade-right">
             <u>Visa Apply</u>
           </div>
-          <div className="countries">We provide visa for these countries.</div>
+          <div className="countries"  data-aos="fade-right">We provide visa for these countries.</div>
           <div className="diff-flags">
-            <div className="display1">
+            <div className="display1" data-aos="flip-left">
               <div className="img3">
                 <img className="flag" src="canada.png" alt="" />
               </div>
@@ -95,7 +100,7 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className="display1">
+            <div className="display1" data-aos="flip-left">
               <div className="img3">
                 <img className="flag2" src="usa-removebg-preview.png" alt="" />
               </div>
@@ -113,7 +118,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="display1">
+            <div className="display1" data-aos="flip-left">
               <div className="img3">
                 <img
                   className="flag3"
@@ -134,7 +139,7 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className="display1">
+            <div className="display1" data-aos="flip-left">
               <div className="img3">
                 <img className="flag4" src="uk.png" alt="" />
               </div>
@@ -151,7 +156,7 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className="display1">
+            <div className="display1" data-aos="flip-left">
               <div className="img3">
                 <img className="flag5" src="New_Zealand.svg" alt="" />
               </div>
@@ -169,11 +174,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="review">
+          <div className="review" data-aos="fade-right">
             <u>What Our Customers Says</u>
           </div>
         </div>
-        <div className="container-bottom">
+        <div className="container-bottom" data-aos="fade-right">
           <div className="forpc">
             <div class="commonninja_component pid-ed049110-64a0-438e-8d90-d36e97fb929a"></div>
           </div>

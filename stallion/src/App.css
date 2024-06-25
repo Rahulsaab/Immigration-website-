@@ -16,7 +16,9 @@ body {
 
 
 
+
 @media (max-width: 768px ) { /* FOR MOBILE VIEW */
+  
   .nav-phone{
     display: none;
   }

@@ -1,22 +1,29 @@
-import React from "react";
+import React, { useEffect }  from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 import Footer from "./footer";
 import { Card } from "flowbite-react";
+
+
 const About = () => {
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
   return (
     <>
       <section>
         <div className="container9">
           <div className="inside-c9">
-            <div className="about-page animate__animated animate__zoomIn">
+            <div className="about-page " data-aos="fade-right">
               ABOUT US
             </div>
           </div>
         </div>
-        <div className="container10">
-          <div className="welcome">
+        <div className="container10"  >
+          <div className="welcome" data-aos="fade-right">
             Welcome to Stallion Immigration Your Gateway to Global Opportunities
           </div>
-          <div className="inside-wel">
+          <div className="inside-wel" data-aos="fade-right">
             At Stallion Immigration, we believe in transforming dreams into
             reality. Nestled in the vibrant city of Mohali, Punjab, we are more
             than just an immigration company; we are your trusted partners on
@@ -34,12 +41,13 @@ const About = () => {
             transfers, we pride ourselves on being your all-in-one solution for
             international ventures.
           </div>
-          <div className="why-choose1">
+          <div className="why-choose1" data-aos="fade-right">
             Here's why Stallion Immigration stands out:
           </div>
-          <div className="allcards">
+          <div className="allcards" >
           <Card
-            className="max-w-sm my-6 mx-3"
+            className="max-w-sm my-6 mx-3 " 
+            data-aos="flip-left"
             imgSrc="pexels-karolina-grabowska-4491492.jpg"
             horizontal
           >
@@ -55,6 +63,7 @@ const About = () => {
           </Card>
           <Card
             className="max-w-sm my-6"
+            data-aos="flip-left"
             imgSrc="pexels-n-voitkevich-7235902.jpg"
             horizontal
           >
@@ -70,6 +79,7 @@ const About = () => {
           </Card>
           <Card
             className="max-w-sm my-6"
+            data-aos="flip-left"
             imgSrc="pexels-wanderer-731217.jpg"
             horizontal
           >
@@ -85,6 +95,7 @@ const About = () => {
           </Card>
           <Card
             className="max-w-sm my-6"
+            data-aos="flip-left"
             imgSrc="pexels-karolina-grabowska-4386408.jpg"
             horizontal
           >
@@ -99,6 +110,7 @@ const About = () => {
           </Card>
           <Card
             className="max-w-sm my-6"
+            data-aos="flip-left"
             imgSrc="pexels-shvetsa-4482900.jpg"
             horizontal
           >

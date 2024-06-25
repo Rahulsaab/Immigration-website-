@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Card } from "flowbite-react";
 import Footer from "./footer";
 const Service = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <section>
         <div className="container7">
-          <div className="services-page">
+          <div className="services-page" data-aos="fade-right">
             SERVICES
           </div>
         </div>
         <div className="container8">
-          <div className="heading1">
+          <div className="heading1"  data-aos="fade-right">
             Unlocking Boundless Horizons Stallion Immigration Services
           </div>
-          <div className="under-heading">
+          <div className="under-heading" data-aos="fade-right">
             Welcome to Stallion Immigration, your passport to a world of
             opportunities! Our suite of services is designed to make your
             journey towards global exploration smooth, exciting, and tailored to
@@ -23,6 +28,7 @@ const Service = () => {
           <div className="service-card">
             <Card
               className="max-w-sm my-6 mx-3"
+              data-aos="flip-left"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-alexander-suhorucov-6457521.jpg"
             >
@@ -38,6 +44,7 @@ const Service = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
+              data-aos="flip-left"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-gabby-k-6238120.jpg"
             >
@@ -53,6 +60,7 @@ const Service = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
+              data-aos="flip-left"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-pavel-danilyuk-8152735.jpg"
             >
@@ -68,6 +76,7 @@ const Service = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
+              data-aos="flip-left"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-pascalr-1089307.jpg"
             >
@@ -83,6 +92,7 @@ const Service = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
+              data-aos="flip-left"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-ketut-subiyanto-4246182.jpg"
             >
@@ -98,6 +108,7 @@ const Service = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
+              data-aos="flip-left"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-ravi-roshan-2875998-8566288.jpg"
             >
