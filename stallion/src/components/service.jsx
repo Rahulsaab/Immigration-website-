@@ -28,7 +28,7 @@ const Service = () => {
           <div className="service-card">
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-alexander-suhorucov-6457521.jpg"
             >
@@ -44,7 +44,7 @@ const Service = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-gabby-k-6238120.jpg"
             >
@@ -60,7 +60,7 @@ const Service = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-pavel-danilyuk-8152735.jpg"
             >
@@ -76,7 +76,7 @@ const Service = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-pascalr-1089307.jpg"
             >
@@ -92,7 +92,7 @@ const Service = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-ketut-subiyanto-4246182.jpg"
             >
@@ -108,7 +108,7 @@ const Service = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-ravi-roshan-2875998-8566288.jpg"
             >

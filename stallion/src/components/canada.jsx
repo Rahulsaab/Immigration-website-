@@ -28,7 +28,7 @@ const Canada = () => {
           <div className="h4">
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgSrc="pexels-duygugungor-18806004.jpg"
               horizontal
             >
@@ -45,7 +45,7 @@ const Canada = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgSrc="pexels-rdne-6148993.jpg"
               horizontal
             >
@@ -62,7 +62,7 @@ const Canada = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgSrc="pexels-olly-1024403.jpg"
               horizontal
             >
@@ -79,7 +79,7 @@ const Canada = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgSrc="pexels-expressivestanley-3186386.jpg"
               horizontal
             >

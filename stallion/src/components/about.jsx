@@ -47,7 +47,7 @@ const About = () => {
           <div className="allcards" >
           <Card
             className="max-w-sm my-6 mx-3 " 
-            data-aos="flip-left"
+            data-aos="fade-right"
             imgSrc="pexels-karolina-grabowska-4491492.jpg"
             horizontal
           >
@@ -63,7 +63,7 @@ const About = () => {
           </Card>
           <Card
             className="max-w-sm my-6"
-            data-aos="flip-left"
+            data-aos="fade-right"
             imgSrc="pexels-n-voitkevich-7235902.jpg"
             horizontal
           >
@@ -79,7 +79,7 @@ const About = () => {
           </Card>
           <Card
             className="max-w-sm my-6"
-            data-aos="flip-left"
+            data-aos="fade-right"
             imgSrc="pexels-wanderer-731217.jpg"
             horizontal
           >
@@ -95,7 +95,7 @@ const About = () => {
           </Card>
           <Card
             className="max-w-sm my-6"
-            data-aos="flip-left"
+            data-aos="fade-right"
             imgSrc="pexels-karolina-grabowska-4386408.jpg"
             horizontal
           >
@@ -110,7 +110,7 @@ const About = () => {
           </Card>
           <Card
             className="max-w-sm my-6"
-            data-aos="flip-left"
+            data-aos="fade-right"
             imgSrc="pexels-shvetsa-4482900.jpg"
             horizontal
           >

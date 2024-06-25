@@ -67,7 +67,7 @@ const Skills = () => {
             <div className="div2">
               <Card
                 className="max-w-sm my-6 mx-3"
-                data-aos="flip-left"
+                data-aos="fade-right"
                 imgAlt="Meaningful alt text for an image that is not purely decorative"
                 imgSrc="pexels-olly-3775553.jpg"
               >
@@ -85,7 +85,7 @@ const Skills = () => {
               </Card>
               <Card
                 className="max-w-sm my-6 mx-3"
-                data-aos="flip-left"
+                data-aos="fade-right"
                 imgAlt="Meaningful alt text for an image that is not purely decorative"
                 imgSrc="pexels-cottonbro-6158658.jpg"
               >
@@ -117,7 +117,7 @@ const Skills = () => {
           <div className="div3">
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-gian-luca-schiavoni-871241124-19689333.jpg"
             >
@@ -134,7 +134,7 @@ const Skills = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-bravingbird-1063299432-20522435.jpg"
             >
@@ -152,7 +152,7 @@ const Skills = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc="pexels-toulouse-3099037.jpg"
             >

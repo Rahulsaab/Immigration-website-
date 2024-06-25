@@ -32,7 +32,7 @@ const Contact = () => {
             worldwide, Stallion Immigration has the expertise to make it happen.
           </div>
           <div className="all-divs">
-            <div className="d4" data-aos="flip-left">
+            <div className="d4" data-aos="fade-right">
               <div className="contact-page-icon">
               <FaLocationDot />
               </div>
@@ -48,7 +48,7 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className="d4" data-aos="flip-left">
+            <div className="d4" data-aos="fade-right">
               <div className="contact-page-icon">
               <MdAddCall />
               </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className="d4" data-aos="flip-left">
+            <div className="d4" data-aos="fade-right">
               <div className="contact-page-icon">
               <IoMail />
               </div>

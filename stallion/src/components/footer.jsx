@@ -18,18 +18,19 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="container5" data-aos="fade-right">
+        <div className="container5" >
           <div className="footer">
             <div className="f1">
-              <div className="heading">
+              <div className="heading" data-aos="fade-right">
                 <u>VISIT US</u>
               </div>
-              <div className="sub-head">
+              <div className="sub-head" data-aos="fade-right">
                 <div style={{ display: "flex" }}>
                   <div style={{ fontSize: "1.3rem", paddingTop: "4px" }}>
                     <FaLocationDot />
                   </div>
                   <a
+                   
                     className="loca"
                     href="https://maps.app.goo.gl/GvcE4hAS5dnJDXcHA"
                     target="_blank"
@@ -40,28 +41,12 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="left-footer">
-                <div className="left-img">
-                  <img
-                    className="logo-footer"
-                    src="Logo.png"
-                    alt="Stallion Immigration"
-                  />
-                </div>
-                <div className="name1">
-                  <div className="stallion1">Stallion</div>
-                  <div className="immi1">Immigration</div>
-                  <div className="aspire1">
-                    <span className="asp">ASPIRE</span> TO FLY
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="f2">
-              <div className="heading">
+              <div className="heading" data-aos="fade-right">
                 <u>CONTACT US</u>
               </div>
-              <div className="sub-head">
+              <div className="sub-head" data-aos="fade-right">
                 <div style={{ display: "flex" }}>
                   <div className="mailcl">
                     <FaPhoneAlt />
@@ -81,10 +66,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="f3">
-              <div className="heading">
+              <div className="heading" data-aos="fade-right">
                 <u>QUICK LINKS</u>
               </div>
-              <div className="head-foot">
+              <div className="head-foot" data-aos="fade-right">
                 <div style={{ display: "flex" }}>
                   <Link to="/" style={{ textDecoration: "none" }}>
                     Home
@@ -113,10 +98,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="follow">
-              <div className="heading">
+              <div className="heading" data-aos="fade-right">
                 <u>CONNECT WITH US</u>
               </div>
-              <div className="icons1">
+              <div className="icons1" data-aos="fade-right">
                 <div className="wa">
                   <a
                     className="wa"
@@ -207,7 +192,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="left-footer3">
+            <div className="left-footer3" data-aos="fade-right">
               <div className="left-img">
                 <img
                   className="logo-footer"

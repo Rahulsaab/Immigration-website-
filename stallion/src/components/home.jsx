@@ -117,7 +117,6 @@ const Home = () => {
                 </button>
               </div>
             </div>
-
             <div className="display1" data-aos="flip-left">
               <div className="img3">
                 <img

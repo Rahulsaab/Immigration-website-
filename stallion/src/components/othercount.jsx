@@ -32,7 +32,7 @@ const Othercount = () => {
           <div className="h4">
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgSrc="pexels-spencer-4353813.jpg"
               horizontal
             >
@@ -51,7 +51,7 @@ const Othercount = () => {
             </Card>
             <Card
               className="max-w-sm my-6 mx-3"
-              data-aos="flip-left"
+              data-aos="fade-right"
               imgSrc="pexels-thirdman-7659872.jpg"
               horizontal
             >
