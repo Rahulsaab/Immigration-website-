@@ -3,10 +3,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "./footer";
 import { Card } from "flowbite-react";
+
 const Othercount = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+
   return (
     <>
       <section>
@@ -30,7 +32,7 @@ const Othercount = () => {
             seamless, memorable, and filled with endless possibilities.
           </div>
           <div className="h4">
-            <Card
+          <Card
               className="max-w-sm my-6 mx-3"
               data-aos="fade-right"
               imgSrc="pexels-spencer-4353813.jpg"

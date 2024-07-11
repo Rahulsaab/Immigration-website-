@@ -3,22 +3,26 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Card } from "flowbite-react";
 import Footer from "./footer";
+
 const Skills = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+
   return (
     <>
       <section>
         <div className="container13">
-          <div className="heading9 " data-aos="fade-right">
+          <div className="heading9" data-aos="fade-right">
             SKILLED
             <br />
             IMMIGRATION
           </div>
         </div>
         <div className="container14">
-          <div className="heading10" data-aos="fade-right">Express Entry Excellence</div>
+          <div className="heading10" data-aos="fade-right">
+            Express Entry Excellence
+          </div>
           <div className="heading12" data-aos="fade-right">
             The expressway to turning your Canadian dreams into reality!
           </div>
@@ -29,7 +33,7 @@ const Skills = () => {
           </div>
           <div>
             <div className="d6" data-aos="fade-right">
-               Federal Skilled Worker:
+              Federal Skilled Worker:
               Unleash Your Professional Potential
             </div>
             <div className="d7" data-aos="fade-right">
@@ -40,7 +44,7 @@ const Skills = () => {
               the Canadian job market.
             </div>
             <div className="d6" data-aos="fade-right">
-               Federal Skilled Trade:
+              Federal Skilled Trade:
               Crafting Success, Shaping Futures
             </div>
             <div className="d7" data-aos="fade-right">
@@ -50,7 +54,7 @@ const Skills = () => {
               country that values and rewards your exceptional skills.
             </div>
             <div className="d6" data-aos="fade-right">
-               Canadian Experience
+              Canadian Experience
               Class: Your Canadian Journey Starts Here
             </div>
             <div className="d7" data-aos="fade-right">
@@ -63,14 +67,19 @@ const Skills = () => {
             </div>
           </div>
           <div className="heading13">
-            <div className="heading14" data-aos="fade-right">Sponsorship Immigration</div>
+            <div className="heading14" data-aos="fade-right">
+              Sponsorship Immigration
+            </div>
             <div className="div2">
               <Card
                 className="max-w-sm my-6 mx-3"
                 data-aos="fade-right"
-                imgAlt="Meaningful alt text for an image that is not purely decorative"
-                imgSrc="pexels-olly-3775553.jpg"
               >
+                <img
+                  loading="lazy"
+                  src="pexels-olly-3775553.jpg"
+                  alt="For Spouse / Common Law Partner"
+                />
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">
                   For Spouse / Common Law Partner
                 </h5>
@@ -86,9 +95,12 @@ const Skills = () => {
               <Card
                 className="max-w-sm my-6 mx-3"
                 data-aos="fade-right"
-                imgAlt="Meaningful alt text for an image that is not purely decorative"
-                imgSrc="pexels-cottonbro-6158658.jpg"
               >
+                <img
+                  loading="lazy"
+                  src="pexels-cottonbro-6158658.jpg"
+                  alt="For Parents/ Grandparents"
+                />
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">
                   For Parents/ Grandparents
                 </h5>
@@ -111,16 +123,19 @@ const Skills = () => {
             explore unique pathways to Canadian immigration excellence. As your
             trusted guides in Mohali, Punjab, we are thrilled to introduce you
             to the extraordinary opportunities offered by Atlantic Immigration,
-            Rural &amp; Northern Immigration, and the Yukon Community Pilot
+            Rural & Northern Immigration, and the Yukon Community Pilot
             Program.
           </div>
           <div className="div3">
             <Card
               className="max-w-sm my-6 mx-3"
               data-aos="fade-right"
-              imgAlt="Meaningful alt text for an image that is not purely decorative"
-              imgSrc="pexels-gian-luca-schiavoni-871241124-19689333.jpg"
             >
+              <img
+                loading="lazy"
+                src="pexels-gian-luca-schiavoni-871241124-19689333.jpg"
+                alt="Atlantic Immigration"
+              />
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">
                 Atlantic Immigration
               </h5>
@@ -135,16 +150,19 @@ const Skills = () => {
             <Card
               className="max-w-sm my-6 mx-3"
               data-aos="fade-right"
-              imgAlt="Meaningful alt text for an image that is not purely decorative"
-              imgSrc="pexels-bravingbird-1063299432-20522435.jpg"
             >
+              <img
+                loading="lazy"
+                src="pexels-bravingbird-1063299432-20522435.jpg"
+                alt="Rural & Northern Immigration"
+              />
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">
-                Rural &amp; Northern Immigration
+                Rural & Northern Immigration
               </h5>
               <p className="font-normal text-gray-700 dark:text-gray-400">
                 For those yearning for the tranquility of rural life or the
                 adventure of Canada's northern regions, Stallion Immigration's
-                Rural &amp; Northern Immigration program is your key to
+                Rural & Northern Immigration program is your key to
                 unlocking these extraordinary landscapes. Let us guide you to
                 where the pace is serene, and the possibilities are as vast as
                 the wilderness itself.
@@ -153,11 +171,14 @@ const Skills = () => {
             <Card
               className="max-w-sm my-6 mx-3"
               data-aos="fade-right"
-              imgAlt="Meaningful alt text for an image that is not purely decorative"
-              imgSrc="pexels-toulouse-3099037.jpg"
             >
+              <img
+                loading="lazy"
+                src="pexels-toulouse-3099037.jpg"
+                alt="Yukon Community Pilot Program"
+              />
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">
-                Pilot Program
+                Yukon Community Pilot Program
               </h5>
               <p className="font-normal text-gray-700 dark:text-gray-400">
                 Embark on a journey of community and opportunity with the Yukon

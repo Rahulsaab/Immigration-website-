@@ -4,47 +4,32 @@ import 'aos/dist/aos.css'
 import Footer from "./footer";
 import { Card } from "flowbite-react";
 
-
 const About = () => {
   useEffect(()=>{
     Aos.init({duration:1000})
   },[])
+
   return (
     <>
       <section>
         <div className="container9">
           <div className="inside-c9">
-            <div className="about-page " data-aos="fade-right">
+            <div className="about-page" data-aos="fade-right">
               ABOUT US
             </div>
           </div>
         </div>
-        <div className="container10"  >
+        <div className="container10">
           <div className="welcome" data-aos="fade-right">
             Welcome to Stallion Immigration Your Gateway to Global Opportunities
           </div>
           <div className="inside-wel" data-aos="fade-right">
-            At Stallion Immigration, we believe in transforming dreams into
-            reality. Nestled in the vibrant city of Mohali, Punjab, we are more
-            than just an immigration company; we are your trusted partners on
-            the journey to a world of endless possibilities. At the heart of
-            Stallion Immigration is a passionate team dedicated to sculpting
-            your path to success. We understand that the decision to move abroad
-            is not just a physical journey but an emotional one too. Our
-            commitment lies in ensuring that every step you take towards a new
-            horizon is seamless and rewarding. From comprehensive career
-            counseling that aligns your aspirations with the right path to
-            expert guidance on study visa consultations and proficient visa
-            application lodging, we're here at every step of your journey.
-            Seamlessly managing your travel arrangements, facilitating spouse
-            visas, aiding in education loans, and ensuring secure money
-            transfers, we pride ourselves on being your all-in-one solution for
-            international ventures.
+            At Stallion Immigration, we believe in transforming dreams into reality. Nestled in the vibrant city of Mohali, Punjab, we are more than just an immigration company; we are your trusted partners on the journey to a world of endless possibilities. At the heart of Stallion Immigration is a passionate team dedicated to sculpting your path to success. We understand that the decision to move abroad is not just a physical journey but an emotional one too. Our commitment lies in ensuring that every step you take towards a new horizon is seamless and rewarding. From comprehensive career counseling that aligns your aspirations with the right path to expert guidance on study visa consultations and proficient visa application lodging, we're here at every step of your journey. Seamlessly managing your travel arrangements, facilitating spouse visas, aiding in education loans, and ensuring secure money transfers, we pride ourselves on being your all-in-one solution for international ventures.
           </div>
           <div className="why-choose1" data-aos="fade-right">
             Here's why Stallion Immigration stands out:
           </div>
-          <div className="allcards" >
+          <div className="allcards">
           <Card
             className="max-w-sm my-6 mx-3 " 
             data-aos="fade-right"
@@ -123,9 +108,7 @@ const About = () => {
                   transfers, so you can focus on building your new life.
             </p>
           </Card>
-          
           </div>
-          
         </div>
       </section>
       <Footer />
