@@ -58,7 +58,6 @@ function App() {
           <Route path="/othercount" element={<Othercount />} />
           <Route path="/tnc" element={<Tnc />} />
           <Route path="/privacy" element={<Privacy />} />
-
           <Route path="/bali" element={<Bali />} />
           <Route path="/dubai" element={<Dubai />} />
           <Route path="/japan" element={<Japan />} />

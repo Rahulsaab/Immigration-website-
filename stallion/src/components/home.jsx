@@ -1,11 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Footer from "./footer";
 import { Button } from "flowbite-react";
 import { Link } from "react-router-dom";
-import CarouselComponent from "./crousels2"
+import CarouselComponent from "./crousels2";
 import Emailjs from "./emailjs";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { HiOutlineArrowRight } from "react-icons/hi";
 
 const Home = () => {
   useEffect(() => {
@@ -23,15 +24,45 @@ const Home = () => {
     };
   }, []);
 
+  const registrationRef = useRef(null);
+
+  const scrollToRegistration = () => {
+    if (registrationRef.current) {
+      registrationRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const registrationRef1 = useRef(null);
+  const scrollToRegistration1 = () => {
+    if (registrationRef1.current) {
+      registrationRef1.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <section>
-        <div className="main-container">
+        <div className="main-container-phone">
           <div className="container-sec" loading="lazy">
-            <div className="aspire">ASPIRE TO FLY</div>
-            <section className="registration-container" data-aos="fade-right">
-              <Emailjs />
-            </section>
+            <div className="aspire">
+              <div className="pc-heading" data-aos="fade-right">SWIFT AND SUITED VISA FACILITY</div>
+              <div className="pc-heading2" data-aos="fade-right">We are not just consultants<br></br>We are Dream Architects.</div>
+              <div className="px-1 pt-5" data-aos="fade-right">
+                <Button color="warning" onClick={scrollToRegistration1}>
+                  Book Consultancy <HiOutlineArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </div>
+            </div>
+            <div className="word-phone">
+              <div className="up" data-aos="fade-right">SWIFT AND SUITED VISA FACILITY</div>
+              <div className="down" data-aos="fade-right">
+                Immigration &<br></br>Visa Consultation
+              </div>
+              <div className="px-1 pt-5" data-aos="fade-right">
+                <Button color="dark" onClick={scrollToRegistration}>
+                  Book Consultancy <HiOutlineArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -42,9 +73,7 @@ const Home = () => {
               Why Choose Stallion Immigration?
             </div>
             <div className="content">
-              <div className="c2" data-aos="fade-right">
-                We are not just consultants - We are Dream Architects.
-              </div>
+              
               <div className="c3" data-aos="fade-right">
                 At Stallion Immigration, we don't just facilitate immigration;
                 we pave the way for a brighter, more promising future. Contact
@@ -65,8 +94,12 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="form-right">
-            <div className="registration-container1" data-aos="fade-right">
+          <div className="form-right"  ref={registrationRef1}>
+            <div
+              className="registration-container1"
+              data-aos="fade-right"
+              
+            >
               <Emailjs />
             </div>
           </div>
@@ -74,7 +107,7 @@ const Home = () => {
       </section>
       <section>
         <div className="container2">
-        <div className="visa" data-aos="fade-right">
+          <div className="visa" data-aos="fade-right">
             <u>Visa Apply</u>
           </div>
           <div className="countries" data-aos="fade-right">
@@ -192,16 +225,21 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="review"  data-aos="fade-right"><u>International Holiday Packages</u></div>
+          <div className="review" data-aos="fade-right">
+            <u>International Holiday Packages</u>
+          </div>
         </div>
       </section>
       <section>
-        <div className="containscroll"  data-aos="fade-right">
-          <CarouselComponent/>
+        <div className="containscroll" data-aos="fade-right">
+          <CarouselComponent />
         </div>
       </section>
       <section>
         <div className="container2">
+          <div className="registration-container" ref={registrationRef} data-aos="fade-right">
+            <Emailjs />
+          </div>
           <div className="review" data-aos="fade-right">
             <u>What Our Customers Say</u>
           </div>
