@@ -8,7 +8,8 @@ import Header from "./components/navbar";
 import { Spinner } from "flowbite-react";
 import ScrollTop from "./components/scrolltop";
 import WhatsAppButton from "./components/whatsapp";
-
+import Component from "./components/navbar2";
+    
 const Home = React.lazy(() => import("./components/home"));
 const Service = React.lazy(() => import("./components/service"));
 const Skills = React.lazy(() => import("./components/skills"));
@@ -18,12 +19,18 @@ const Canada = React.lazy(() => import("./components/canada"));
 const Othercount = React.lazy(() => import("./components/othercount"));
 const Tnc = React.lazy(() => import("./components/tnc"));
 const Privacy = React.lazy(() => import("./components/privacy"));
-const Bali = React.lazy(()=>import("./components/components_crousel/bali"))
-const  Thailand= React.lazy(()=>import("./components/components_crousel/thailand"))
-const  Japan= React.lazy(()=>import("./components/components_crousel/japan"))
-const Europe = React.lazy(()=>import("./components/components_crousel/europe"))
-const Singapore = React.lazy(()=>import("./components/components_crousel/singapore"))
-const Dubai = React.lazy(()=>import("./components/components_crousel/dubai"))
+const Bali = React.lazy(() => import("./components/components_crousel/bali"));
+const Thailand = React.lazy(() =>
+  import("./components/components_crousel/thailand")
+);
+const Japan = React.lazy(() => import("./components/components_crousel/japan"));
+const Europe = React.lazy(() =>
+  import("./components/components_crousel/europe")
+);
+const Singapore = React.lazy(() =>
+  import("./components/components_crousel/singapore")
+);
+const Dubai = React.lazy(() => import("./components/components_crousel/dubai"));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,6 +47,7 @@ function App() {
     <BrowserRouter>
       <ToastContainer />
       <ScrollToTop />
+      {/* <Component/> */}
       <Header />
       <React.Suspense
         fallback={
@@ -48,7 +56,9 @@ function App() {
           </div>
         }
       >
+
         <Routes>
+          
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -61,9 +71,9 @@ function App() {
           <Route path="/bali" element={<Bali />} />
           <Route path="/dubai" element={<Dubai />} />
           <Route path="/japan" element={<Japan />} />
-          <Route path="/singapore" element={<Singapore/>} />
-          <Route path="/thailand" element={<Thailand/>} />
-          <Route path="/europe" element={<Europe/>} />
+          <Route path="/singapore" element={<Singapore />} />
+          <Route path="/thailand" element={<Thailand />} />
+          <Route path="/europe" element={<Europe />} />
         </Routes>
         <WhatsAppButton phoneNumber="+917970000976" />
         <ScrollTop />

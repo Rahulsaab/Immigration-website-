@@ -11,6 +11,11 @@ body {
 }
 
 @media (max-width: 768px ) { /* FOR MOBILE VIEW */
+  .dropdown-scroll {
+    max-height: 400px; 
+    overflow-y: auto;
+  }
+  
   
   .nav-pc{
     display: none;
