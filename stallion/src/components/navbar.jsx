@@ -1,7 +1,18 @@
+import React, { useState } from "react";
 import { Navbar, MegaMenu } from "flowbite-react";
 import { Link } from "react-router-dom";
 
 function Header() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleLinkClick = () => {
+    setIsDropdownOpen(false);
+  };
+
   return (
     <>
       <div className="nav-phone">
@@ -26,7 +37,10 @@ function Header() {
             </Navbar.Link>
             <MegaMenu.Dropdown
               toggle={
-                <span className="text-xl cursor-pointer pl-3 pt-2 pb-2">
+                <span
+                  className="text-xl cursor-pointer pl-3 pt-2 pb-2"
+                  onClick={handleDropdownToggle}
+                >
                   <Link to="/service">Services</Link>
                 </span>
               }
@@ -35,27 +49,27 @@ function Header() {
                 <div className="space-y-4 p-5">
                   <u className="font-bold">Visa Services</u>
                   <li>
-                    <Link to="/canada" className="hover-blue">
+                    <Link to="/canada" className="hover-blue" onClick={handleLinkClick}>
                       Canada Visa
                     </Link>
                   </li>
                   <li>
-                    <Link to="/othercount" className="hover-blue">
+                    <Link to="/othercount" className="hover-blue" onClick={handleLinkClick}>
                       UK Visa
                     </Link>
                   </li>
                   <li>
-                    <Link to="/othercount" className="hover-blue">
+                    <Link to="/othercount" className="hover-blue" onClick={handleLinkClick}>
                       Australia Visa
                     </Link>
                   </li>
                   <li>
-                    <Link to="/othercount" className="hover-blue">
+                    <Link to="/othercount" className="hover-blue" onClick={handleLinkClick}>
                       USA Visa
                     </Link>
                   </li>
                   <li>
-                    <Link to="/othercount" className="hover-blue">
+                    <Link to="/othercount" className="hover-blue" onClick={handleLinkClick}>
                       New Zealand Visa
                     </Link>
                   </li>
@@ -63,32 +77,32 @@ function Header() {
                 <div className="space-y-4 p-5">
                   <u className="font-bold">International Holiday Packages</u>
                   <li>
-                    <Link to="/thailand" className="hover-blue">
+                    <Link to="/thailand" className="hover-blue" onClick={handleLinkClick}>
                       Thailand Package
                     </Link>
                   </li>
                   <li>
-                    <Link to="/bali" className="hover-blue">
+                    <Link to="/bali" className="hover-blue" onClick={handleLinkClick}>
                       Bali Package
                     </Link>
                   </li>
                   <li>
-                    <Link to="/singapore" className="hover-blue">
+                    <Link to="/singapore" className="hover-blue" onClick={handleLinkClick}>
                       Singapore Package
                     </Link>
                   </li>
                   <li>
-                    <Link to="/japan" className="hover-blue">
+                    <Link to="/japan" className="hover-blue" onClick={handleLinkClick}>
                       Japan Package
                     </Link>
                   </li>
                   <li>
-                    <Link to="/dubai" className="hover-blue">
+                    <Link to="/dubai" className="hover-blue" onClick={handleLinkClick}>
                       Dubai Package
                     </Link>
                   </li>
                   <li>
-                    <Link to="/europe" className="hover-blue">
+                    <Link to="/europe" className="hover-blue" onClick={handleLinkClick}>
                       Europe Package
                     </Link>
                   </li>
@@ -124,73 +138,71 @@ function Header() {
             <Navbar.Link className="text-black hover:scale-110 transition-all duration-300">
               <MegaMenu.Dropdown
                 toggle={
-                  <>
-                    <Link to="/service" className="text-xl">
-                      Services
-                    </Link>
-                  </>
+                  <Link to="/service" className="text-xl" onClick={handleDropdownToggle}>
+                    Services
+                  </Link>
                 }
               >
                 <ul className="grid grid-cols-3 text-base list-disc pl-7">
                   <div className="space-y-4 p-5">
                     <u className="font-bold">Visa Services</u>
                     <li>
-                      <a className="hover-blue">
-                        <Link to="/canada">Canada Visa</Link>
-                      </a>
+                      <Link to="/canada" className="hover-blue" onClick={handleLinkClick}>
+                        Canada Visa
+                      </Link>
                     </li>
                     <li>
-                      <a className="hover-blue">
-                        <Link to="/othercount">UK Visa</Link>
-                      </a>
+                      <Link to="/othercount" className="hover-blue" onClick={handleLinkClick}>
+                        UK Visa
+                      </Link>
                     </li>
                     <li>
-                      <a className="hover-blue">
-                        <Link to="/othercount">Australia Visa</Link>
-                      </a>
+                      <Link to="/othercount" className="hover-blue" onClick={handleLinkClick}>
+                        Australia Visa
+                      </Link>
                     </li>
                     <li>
-                      <a className="hover-blue">
-                        <Link to="/othercount">USA Visa</Link>
-                      </a>
+                      <Link to="/othercount" className="hover-blue" onClick={handleLinkClick}>
+                        USA Visa
+                      </Link>
                     </li>
                     <li>
-                      <a className="hover-blue">
-                        <Link to="/othercount">New Zealand Visa</Link>
-                      </a>
+                      <Link to="/othercount" className="hover-blue" onClick={handleLinkClick}>
+                        New Zealand Visa
+                      </Link>
                     </li>
                   </div>
                   <div className="space-y-4 p-5">
                     <u className="font-bold">International Holiday Packages</u>
                     <li>
-                      <a className="hover-blue">
-                        <Link to="/thailand">Thailand Package</Link>
-                      </a>
+                      <Link to="/thailand" className="hover-blue" onClick={handleLinkClick}>
+                        Thailand Package
+                      </Link>
                     </li>
                     <li>
-                      <a className="hover-blue">
-                        <Link to="/bali">Bali Package</Link>
-                      </a>
+                      <Link to="/bali" className="hover-blue" onClick={handleLinkClick}>
+                        Bali Package
+                      </Link>
                     </li>
                     <li>
-                      <a className="hover-blue">
-                        <Link to="/singapore">Singapore Package</Link>
-                      </a>
+                      <Link to="/singapore" className="hover-blue" onClick={handleLinkClick}>
+                        Singapore Package
+                      </Link>
                     </li>
                     <li>
-                      <a className="hover-blue">
-                        <Link to="/japan">Japan Package</Link>
-                      </a>
+                      <Link to="/japan" className="hover-blue" onClick={handleLinkClick}>
+                        Japan Package
+                      </Link>
                     </li>
                     <li>
-                      <a className="hover-blue">
-                        <Link to="/dubai">Dubai Package</Link>
-                      </a>
+                      <Link to="/dubai" className="hover-blue" onClick={handleLinkClick}>
+                        Dubai Package
+                      </Link>
                     </li>
                     <li>
-                      <a className="hover-blue">
-                        <Link to="/europe">Europe Package</Link>
-                      </a>
+                      <Link to="/europe" className="hover-blue" onClick={handleLinkClick}>
+                        Europe Package
+                      </Link>
                     </li>
                   </div>
                 </ul>
@@ -208,4 +220,5 @@ function Header() {
     </>
   );
 }
+
 export default Header;

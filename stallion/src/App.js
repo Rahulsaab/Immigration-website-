@@ -8,7 +8,7 @@ import Header from "./components/navbar";
 import { Spinner } from "flowbite-react";
 import ScrollTop from "./components/scrolltop";
 import WhatsAppButton from "./components/whatsapp";
-import Component from "./components/navbar2";
+// import Component from "./components/navbar2";
     
 const Home = React.lazy(() => import("./components/home"));
 const Service = React.lazy(() => import("./components/service"));
